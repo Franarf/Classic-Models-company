@@ -1,0 +1,233 @@
+body {
+    font-family: sans-serif;
+}
+
+/*/modifies the heaader*/
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+    padding: 20px 30px;
+    color: white;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(48, 88, 152, 0.49);
+}
+
+/*Main table class*/
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    width: 70%;
+    margin: auto;
+}
+
+.table td,
+.table th {
+    border: 1px solid #0c8dc6;
+    padding: 8px;
+}
+
+.table tr {
+    height: 50px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+}
+
+/*specif gradient color for the sum in payments*/
+#sumtotal {
+    background-image: linear-gradient(to bottom left, #ffffff, #243b55);
+}
+
+/*table in extra pyments*/
+#table1 {
+    margin-top: 50px;
+}
+
+/*table in extra pyments*/
+#table2 {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+/*special buttons*/
+.btn {
+    margin: inherit;
+    padding: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: rgba(108, 181, 111, 0.51);
+    cursor: pointer;
+}
+
+.btn2 {
+    margin: inherit;
+    padding: inherit;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(203, 69, 69, 0.18);
+}
+
+#officeback {
+    background-image: radial-gradient(circle, #ffffff, #243b55);
+}
+
+#payback {
+    background-image: radial-gradient(circle, #ffffff, #243b55);
+}
+
+#office-extra {
+    margin-bottom: 100px;
+}
+
+.footer-box {
+    margin-top: 0px;
+    text-align: center;
+    color: darkgoldenrod;
+    font-size: 13px;
+    padding: 10px 200px;
+    background-image: linear-gradient(#bdc3c7, #2c3e50);
+}
+
+#input-box {
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+    float: right;
+}
+
+/*
+ * Copyright (c) 2012-2013 Thibaut Courouble
+ * http://www.cssflow.com
+ * Licensed under the MIT License
+ *
+ * Sass/SCSS source: https://goo.gl/qEV26
+ * PSD by Hemn Chawroka: https://goo.gl/nXZHJ
+ * https://speckyboy.com/open-source-css-javascript-select-box-snippets/
+ */
+
+.container>.dropdown {
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.dropdown {
+    margin-left: 140px;
+    display: inline-block;
+    position: relative;
+    overflow: inherit;
+    height: 28px;
+    width: 150px;
+    background: #f2f2f2;
+    border: 1px solid;
+    border-color: white #f7f7f7 whitesmoke;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:before,
+.dropdown:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888888 transparent;
+    pointer-events: none;
+}
+
+.dropdown:before {
+    border-bottom-style: solid;
+    border-top: none;
+}
+
+.dropdown:after {
+    margin-top: 7px;
+    border-top-style: solid;
+    border-bottom: none;
+}
+
+.dropdown-select {
+    position: relative;
+    width: 130%;
+    margin: 0;
+    padding: 6px 8px 6px 10px;
+    height: 28px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #62717a;
+    text-shadow: 0 1px white;
+    background: #f2f2f2;
+    /* Fallback for IE 8 */
+    background: rgba(0, 0, 0, 0) !important;
+    /* "transparent" doesn't work with Opera */
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.dropdown-select:focus {
+    z-index: 3;
+    width: 100%;
+    color: #394349;
+    outline: 2px solid #49aff2;
+    outline: 2px solid -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.dropdown-select>option {
+    margin: 3px;
+    padding: 6px 8px;
+    text-shadow: none;
+    background: #f2f2f2;
+    border-radius: 3px;
+    cursor: pointer;
+}
